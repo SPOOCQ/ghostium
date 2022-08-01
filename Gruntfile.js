@@ -47,7 +47,7 @@ module.exports = function(grunt) {
               ' * <%= pkg.name %>\n' +
               ' * <%= pkg.description %>\n' +
               ' * <%= pkg.url %>\n' +
-              ' * @author <%= pkg.author.name %> <%= pkg.author.url %>\n' +
+              ' * @author <%= pkg.primary_author.name %> <%= pkg.primary_author.url %>\n' +
               ' * @version <%= pkg.version %>\n' +
               ' * Copyright <%= pkg.copyright %>. <%= pkg.license %> licensed.\n' +
               ' */\n'
