@@ -36,16 +36,23 @@ Ghostium uses Font Awesome you can find all icons available on the url below
   </a>
 </li>
 <li class="drawer-list-divider"></li>
+{{#has any="@site.twitter, @site.facebook"}}
 <li class="drawer-list-item drawer-list-title">
   Follow me
 </li>
+
+{{#if @site.twitter}}
 <li class="drawer-list-item">
-  <a href="http://twitter.com" target="_blank">
+  <a href="{{twitter_url}}" target="_blank">
     <i class="fa fa-twitter"></i>Twitter
   </a>
 </li>
+{{/if}}
+{{#if @site.facebook}}
 <li class="drawer-list-item">
-  <a href="http://github.com" target="_blank">
-    <i class="fa fa-github"></i>Github
+  <a href="{{facebook_url}}" target="_blank">
+    <i class="fa fa-facebook"></i>Github
   </a>
 </li>
+{{/if}}
+{{/has}}
